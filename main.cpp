@@ -1,5 +1,5 @@
 #include "autorize.h"
-#include "databasemanager.h">
+#include "databasemanager.h"
 #include <QApplication>
 
 int main(int argc, char *argv[])

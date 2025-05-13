@@ -348,6 +348,8 @@ moc_autorize.cpp: ../../autorize.h \
 	/usr/lib/qt6/libexec/moc $(DEFINES) --include /home/ozener/Projects/bankomat_model/build/Desktop-Debug/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-clang -I/home/ozener/Projects/bankomat_model -I/usr/include/x86_64-linux-gnu/qt6 -I/usr/include/x86_64-linux-gnu/qt6/QtWidgets -I/usr/include/x86_64-linux-gnu/qt6/QtGui -I/usr/include/x86_64-linux-gnu/qt6/QtSql -I/usr/include/x86_64-linux-gnu/qt6/QtCore -I. -I/usr/include/c++/13 -I/usr/include/x86_64-linux-gnu/c++/13 -I/usr/include/c++/13/backward -I/usr/lib/llvm-18/lib/clang/18/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include ../../autorize.h -o moc_autorize.cpp
 
 moc_bankomatwindow.cpp: ../../bankomatwindow.h \
+		../../autorize.h \
+		../../ui_autorize.h \
 		../../ui_bankomatwindow.h \
 		moc_predefs.h \
 		/usr/lib/qt6/libexec/moc
@@ -384,17 +386,22 @@ autorize.o: ../../autorize.cpp ../../autorize.h \
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o autorize.o ../../autorize.cpp
 
 bankomatwindow.o: ../../bankomatwindow.cpp ../../bankomatwindow.h \
-		../../ui_bankomatwindow.h
+		../../autorize.h \
+		../../ui_autorize.h \
+		../../ui_bankomatwindow.h \
+		../../databasemanager.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o bankomatwindow.o ../../bankomatwindow.cpp
 
-databasemanager.o: ../../databasemanager.cpp ../../databasemanager.h
+databasemanager.o: ../../databasemanager.cpp ../../databasemanager.h \
+		../../autorize.h \
+		../../ui_autorize.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o databasemanager.o ../../databasemanager.cpp
 
 keyboardbind.o: ../../keyboardbind.cpp ../../databasemanager.h \
 		../../bankomatwindow.h \
-		../../ui_bankomatwindow.h \
 		../../autorize.h \
-		../../ui_autorize.h
+		../../ui_autorize.h \
+		../../ui_bankomatwindow.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o keyboardbind.o ../../keyboardbind.cpp
 
 main.o: ../../main.cpp ../../autorize.h \
