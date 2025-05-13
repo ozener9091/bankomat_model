@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'bankomatwindow.ui'
 **
-** Created by: Qt User Interface Compiler version 5.15.13
+** Created by: Qt User Interface Compiler version 6.4.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -34,66 +34,66 @@ public:
     void setupUi(QWidget *bankomatwindow)
     {
         if (bankomatwindow->objectName().isEmpty())
-            bankomatwindow->setObjectName(QString::fromUtf8("bankomatwindow"));
+            bankomatwindow->setObjectName("bankomatwindow");
         bankomatwindow->resize(1200, 800);
         bankomatwindow->setMinimumSize(QSize(800, 800));
         bankomatwindow->setMaximumSize(QSize(1200, 1200));
         balanceButton = new QPushButton(bankomatwindow);
-        balanceButton->setObjectName(QString::fromUtf8("balanceButton"));
+        balanceButton->setObjectName("balanceButton");
         balanceButton->setGeometry(QRect(50, 30, 300, 150));
         QFont font;
-        font.setFamily(QString::fromUtf8("Ubuntu Mono"));
+        font.setFamilies({QString::fromUtf8("Ubuntu Mono")});
         font.setPointSize(20);
         font.setBold(true);
         balanceButton->setFont(font);
         takeBox = new QGroupBox(bankomatwindow);
-        takeBox->setObjectName(QString::fromUtf8("takeBox"));
+        takeBox->setObjectName("takeBox");
         takeBox->setGeometry(QRect(80, 240, 591, 531));
         QFont font1;
-        font1.setFamily(QString::fromUtf8("Ubuntu Mono"));
+        font1.setFamilies({QString::fromUtf8("Ubuntu Mono")});
         font1.setPointSize(22);
         font1.setBold(true);
         font1.setItalic(false);
         takeBox->setFont(font1);
         takeButton_100 = new QPushButton(takeBox);
-        takeButton_100->setObjectName(QString::fromUtf8("takeButton_100"));
+        takeButton_100->setObjectName("takeButton_100");
         takeButton_100->setGeometry(QRect(40, 70, 200, 200));
         takeButton_500 = new QPushButton(takeBox);
-        takeButton_500->setObjectName(QString::fromUtf8("takeButton_500"));
+        takeButton_500->setObjectName("takeButton_500");
         takeButton_500->setGeometry(QRect(330, 70, 200, 200));
         takeButton_1000 = new QPushButton(takeBox);
-        takeButton_1000->setObjectName(QString::fromUtf8("takeButton_1000"));
+        takeButton_1000->setObjectName("takeButton_1000");
         takeButton_1000->setGeometry(QRect(40, 300, 200, 200));
         takeButton_other = new QPushButton(takeBox);
-        takeButton_other->setObjectName(QString::fromUtf8("takeButton_other"));
+        takeButton_other->setObjectName("takeButton_other");
         takeButton_other->setGeometry(QRect(330, 300, 200, 200));
         QFont font2;
-        font2.setFamily(QString::fromUtf8("Ubuntu Mono"));
+        font2.setFamilies({QString::fromUtf8("Ubuntu Mono")});
         font2.setPointSize(18);
         font2.setBold(true);
         font2.setItalic(false);
         takeButton_other->setFont(font2);
         exitButton = new QPushButton(bankomatwindow);
-        exitButton->setObjectName(QString::fromUtf8("exitButton"));
+        exitButton->setObjectName("exitButton");
         exitButton->setGeometry(QRect(850, 30, 300, 150));
         QFont font3;
-        font3.setFamily(QString::fromUtf8("Ubuntu Mono"));
+        font3.setFamilies({QString::fromUtf8("Ubuntu Mono")});
         font3.setPointSize(22);
         font3.setBold(true);
         exitButton->setFont(font3);
         fillButton = new QPushButton(bankomatwindow);
-        fillButton->setObjectName(QString::fromUtf8("fillButton"));
+        fillButton->setObjectName("fillButton");
         fillButton->setGeometry(QRect(850, 309, 300, 430));
         QFont font4;
-        font4.setFamily(QString::fromUtf8("Ubuntu Mono"));
+        font4.setFamilies({QString::fromUtf8("Ubuntu Mono")});
         font4.setPointSize(28);
         font4.setBold(true);
         fillButton->setFont(font4);
         godbyeText = new QLabel(bankomatwindow);
-        godbyeText->setObjectName(QString::fromUtf8("godbyeText"));
+        godbyeText->setObjectName("godbyeText");
         godbyeText->setGeometry(QRect(240, 200, 700, 300));
         QFont font5;
-        font5.setFamily(QString::fromUtf8("Ubuntu Mono"));
+        font5.setFamilies({QString::fromUtf8("Ubuntu Mono")});
         font5.setPointSize(48);
         godbyeText->setFont(font5);
         godbyeText->setAlignment(Qt::AlignCenter);

@@ -1,74 +1,101 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'autorize.h'
 **
-** Created by: The Qt Meta Object Compiler version 67 (Qt 5.15.13)
+** Created by: The Qt Meta Object Compiler version 68 (Qt 6.4.2)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
 #include <memory>
 #include "autorize.h"
-#include <QtCore/qbytearray.h>
+#include <QtGui/qtextcursor.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'autorize.h' doesn't include <QObject>."
-#elif Q_MOC_OUTPUT_REVISION != 67
-#error "This file was generated using the moc from 5.15.13. It"
+#elif Q_MOC_OUTPUT_REVISION != 68
+#error "This file was generated using the moc from 6.4.2. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
+#endif
+
+#ifndef Q_CONSTINIT
+#define Q_CONSTINIT
 #endif
 
 QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
+namespace {
 struct qt_meta_stringdata_AutorizeWindow_t {
-    QByteArrayData data[18];
-    char stringdata0[400];
+    uint offsetsAndSizes[36];
+    char stringdata0[15];
+    char stringdata1[15];
+    char stringdata2[1];
+    char stringdata3[24];
+    char stringdata4[21];
+    char stringdata5[24];
+    char stringdata6[24];
+    char stringdata7[24];
+    char stringdata8[24];
+    char stringdata9[24];
+    char stringdata10[24];
+    char stringdata11[24];
+    char stringdata12[24];
+    char stringdata13[24];
+    char stringdata14[24];
+    char stringdata15[28];
+    char stringdata16[28];
+    char stringdata17[28];
 };
-#define QT_MOC_LITERAL(idx, ofs, len) \
-    Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-    qptrdiff(offsetof(qt_meta_stringdata_AutorizeWindow_t, stringdata0) + ofs \
-        - idx * sizeof(QByteArrayData)) \
-    )
-static const qt_meta_stringdata_AutorizeWindow_t qt_meta_stringdata_AutorizeWindow = {
+#define QT_MOC_LITERAL(ofs, len) \
+    uint(sizeof(qt_meta_stringdata_AutorizeWindow_t::offsetsAndSizes) + ofs), len 
+Q_CONSTINIT static const qt_meta_stringdata_AutorizeWindow_t qt_meta_stringdata_AutorizeWindow = {
     {
-QT_MOC_LITERAL(0, 0, 14), // "AutorizeWindow"
-QT_MOC_LITERAL(1, 15, 14), // "InputPINWindow"
-QT_MOC_LITERAL(2, 30, 0), // ""
-QT_MOC_LITERAL(3, 31, 23), // "on_RESET_Button_clicked"
-QT_MOC_LITERAL(4, 55, 20), // "on_OK_Button_clicked"
-QT_MOC_LITERAL(5, 76, 23), // "on_pushButton_1_clicked"
-QT_MOC_LITERAL(6, 100, 23), // "on_pushButton_2_clicked"
-QT_MOC_LITERAL(7, 124, 23), // "on_pushButton_3_clicked"
-QT_MOC_LITERAL(8, 148, 23), // "on_pushButton_4_clicked"
-QT_MOC_LITERAL(9, 172, 23), // "on_pushButton_5_clicked"
-QT_MOC_LITERAL(10, 196, 23), // "on_pushButton_6_clicked"
-QT_MOC_LITERAL(11, 220, 23), // "on_pushButton_7_clicked"
-QT_MOC_LITERAL(12, 244, 23), // "on_pushButton_8_clicked"
-QT_MOC_LITERAL(13, 268, 23), // "on_pushButton_9_clicked"
-QT_MOC_LITERAL(14, 292, 23), // "on_pushButton_0_clicked"
-QT_MOC_LITERAL(15, 316, 27), // "on_pushButton_canel_clicked"
-QT_MOC_LITERAL(16, 344, 27), // "on_pushButton_clear_clicked"
-QT_MOC_LITERAL(17, 372, 27) // "on_pushButton_enter_clicked"
-
+        QT_MOC_LITERAL(0, 14),  // "AutorizeWindow"
+        QT_MOC_LITERAL(15, 14),  // "InputPINWindow"
+        QT_MOC_LITERAL(30, 0),  // ""
+        QT_MOC_LITERAL(31, 23),  // "on_RESET_Button_clicked"
+        QT_MOC_LITERAL(55, 20),  // "on_OK_Button_clicked"
+        QT_MOC_LITERAL(76, 23),  // "on_pushButton_1_clicked"
+        QT_MOC_LITERAL(100, 23),  // "on_pushButton_2_clicked"
+        QT_MOC_LITERAL(124, 23),  // "on_pushButton_3_clicked"
+        QT_MOC_LITERAL(148, 23),  // "on_pushButton_4_clicked"
+        QT_MOC_LITERAL(172, 23),  // "on_pushButton_5_clicked"
+        QT_MOC_LITERAL(196, 23),  // "on_pushButton_6_clicked"
+        QT_MOC_LITERAL(220, 23),  // "on_pushButton_7_clicked"
+        QT_MOC_LITERAL(244, 23),  // "on_pushButton_8_clicked"
+        QT_MOC_LITERAL(268, 23),  // "on_pushButton_9_clicked"
+        QT_MOC_LITERAL(292, 23),  // "on_pushButton_0_clicked"
+        QT_MOC_LITERAL(316, 27),  // "on_pushButton_canel_clicked"
+        QT_MOC_LITERAL(344, 27),  // "on_pushButton_clear_clicked"
+        QT_MOC_LITERAL(372, 27)   // "on_pushButton_enter_clicked"
     },
-    "AutorizeWindow\0InputPINWindow\0\0"
-    "on_RESET_Button_clicked\0on_OK_Button_clicked\0"
-    "on_pushButton_1_clicked\0on_pushButton_2_clicked\0"
-    "on_pushButton_3_clicked\0on_pushButton_4_clicked\0"
-    "on_pushButton_5_clicked\0on_pushButton_6_clicked\0"
-    "on_pushButton_7_clicked\0on_pushButton_8_clicked\0"
-    "on_pushButton_9_clicked\0on_pushButton_0_clicked\0"
-    "on_pushButton_canel_clicked\0"
-    "on_pushButton_clear_clicked\0"
+    "AutorizeWindow",
+    "InputPINWindow",
+    "",
+    "on_RESET_Button_clicked",
+    "on_OK_Button_clicked",
+    "on_pushButton_1_clicked",
+    "on_pushButton_2_clicked",
+    "on_pushButton_3_clicked",
+    "on_pushButton_4_clicked",
+    "on_pushButton_5_clicked",
+    "on_pushButton_6_clicked",
+    "on_pushButton_7_clicked",
+    "on_pushButton_8_clicked",
+    "on_pushButton_9_clicked",
+    "on_pushButton_0_clicked",
+    "on_pushButton_canel_clicked",
+    "on_pushButton_clear_clicked",
     "on_pushButton_enter_clicked"
 };
 #undef QT_MOC_LITERAL
+} // unnamed namespace
 
-static const uint qt_meta_data_AutorizeWindow[] = {
+Q_CONSTINIT static const uint qt_meta_data_AutorizeWindow[] = {
 
  // content:
-       8,       // revision
+      10,       // revision
        0,       // classname
        0,    0, // classinfo
       16,   14, // methods
@@ -78,23 +105,23 @@ static const uint qt_meta_data_AutorizeWindow[] = {
        0,       // flags
        0,       // signalCount
 
- // slots: name, argc, parameters, tag, flags
-       1,    0,   94,    2, 0x08 /* Private */,
-       3,    0,   95,    2, 0x08 /* Private */,
-       4,    0,   96,    2, 0x08 /* Private */,
-       5,    0,   97,    2, 0x08 /* Private */,
-       6,    0,   98,    2, 0x08 /* Private */,
-       7,    0,   99,    2, 0x08 /* Private */,
-       8,    0,  100,    2, 0x08 /* Private */,
-       9,    0,  101,    2, 0x08 /* Private */,
-      10,    0,  102,    2, 0x08 /* Private */,
-      11,    0,  103,    2, 0x08 /* Private */,
-      12,    0,  104,    2, 0x08 /* Private */,
-      13,    0,  105,    2, 0x08 /* Private */,
-      14,    0,  106,    2, 0x08 /* Private */,
-      15,    0,  107,    2, 0x08 /* Private */,
-      16,    0,  108,    2, 0x08 /* Private */,
-      17,    0,  109,    2, 0x08 /* Private */,
+ // slots: name, argc, parameters, tag, flags, initial metatype offsets
+       1,    0,  110,    2, 0x08,    1 /* Private */,
+       3,    0,  111,    2, 0x08,    2 /* Private */,
+       4,    0,  112,    2, 0x08,    3 /* Private */,
+       5,    0,  113,    2, 0x08,    4 /* Private */,
+       6,    0,  114,    2, 0x08,    5 /* Private */,
+       7,    0,  115,    2, 0x08,    6 /* Private */,
+       8,    0,  116,    2, 0x08,    7 /* Private */,
+       9,    0,  117,    2, 0x08,    8 /* Private */,
+      10,    0,  118,    2, 0x08,    9 /* Private */,
+      11,    0,  119,    2, 0x08,   10 /* Private */,
+      12,    0,  120,    2, 0x08,   11 /* Private */,
+      13,    0,  121,    2, 0x08,   12 /* Private */,
+      14,    0,  122,    2, 0x08,   13 /* Private */,
+      15,    0,  123,    2, 0x08,   14 /* Private */,
+      16,    0,  124,    2, 0x08,   15 /* Private */,
+      17,    0,  125,    2, 0x08,   16 /* Private */,
 
  // slots: parameters
     QMetaType::Void,
@@ -116,6 +143,51 @@ static const uint qt_meta_data_AutorizeWindow[] = {
 
        0        // eod
 };
+
+Q_CONSTINIT const QMetaObject AutorizeWindow::staticMetaObject = { {
+    QMetaObject::SuperData::link<QMainWindow::staticMetaObject>(),
+    qt_meta_stringdata_AutorizeWindow.offsetsAndSizes,
+    qt_meta_data_AutorizeWindow,
+    qt_static_metacall,
+    nullptr,
+    qt_incomplete_metaTypeArray<qt_meta_stringdata_AutorizeWindow_t,
+        // Q_OBJECT / Q_GADGET
+        QtPrivate::TypeAndForceComplete<AutorizeWindow, std::true_type>,
+        // method 'InputPINWindow'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_RESET_Button_clicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_OK_Button_clicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_pushButton_1_clicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_pushButton_2_clicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_pushButton_3_clicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_pushButton_4_clicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_pushButton_5_clicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_pushButton_6_clicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_pushButton_7_clicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_pushButton_8_clicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_pushButton_9_clicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_pushButton_0_clicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_pushButton_canel_clicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_pushButton_clear_clicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_pushButton_enter_clicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>
+    >,
+    nullptr
+} };
 
 void AutorizeWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
@@ -145,16 +217,6 @@ void AutorizeWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
     (void)_a;
 }
 
-QT_INIT_METAOBJECT const QMetaObject AutorizeWindow::staticMetaObject = { {
-    QMetaObject::SuperData::link<QMainWindow::staticMetaObject>(),
-    qt_meta_stringdata_AutorizeWindow.data,
-    qt_meta_data_AutorizeWindow,
-    qt_static_metacall,
-    nullptr,
-    nullptr
-} };
-
-
 const QMetaObject *AutorizeWindow::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
@@ -179,7 +241,7 @@ int AutorizeWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
         _id -= 16;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
         if (_id < 16)
-            *reinterpret_cast<int*>(_a[0]) = -1;
+            *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
         _id -= 16;
     }
     return _id;

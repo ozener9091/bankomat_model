@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'autorize.ui'
 **
-** Created by: Qt User Interface Compiler version 5.15.13
+** Created by: Qt User Interface Compiler version 6.4.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -46,95 +46,95 @@ public:
     void setupUi(QMainWindow *AutorizeWindow)
     {
         if (AutorizeWindow->objectName().isEmpty())
-            AutorizeWindow->setObjectName(QString::fromUtf8("AutorizeWindow"));
+            AutorizeWindow->setObjectName("AutorizeWindow");
         AutorizeWindow->resize(1200, 800);
         centralwidget = new QWidget(AutorizeWindow);
-        centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
+        centralwidget->setObjectName("centralwidget");
         welcome_label = new QLabel(centralwidget);
-        welcome_label->setObjectName(QString::fromUtf8("welcome_label"));
+        welcome_label->setObjectName("welcome_label");
         welcome_label->setGeometry(QRect(0, 10, 1200, 100));
         QFont font;
-        font.setFamily(QString::fromUtf8("Ubuntu Mono"));
+        font.setFamilies({QString::fromUtf8("Ubuntu Mono")});
         font.setPointSize(48);
         font.setBold(true);
         welcome_label->setFont(font);
         welcome_label->setAlignment(Qt::AlignCenter);
         label = new QLabel(centralwidget);
-        label->setObjectName(QString::fromUtf8("label"));
+        label->setObjectName("label");
         label->setGeometry(QRect(0, 200, 1200, 100));
         QFont font1;
-        font1.setFamily(QString::fromUtf8("Ubuntu Mono"));
+        font1.setFamilies({QString::fromUtf8("Ubuntu Mono")});
         font1.setPointSize(28);
         label->setFont(font1);
         label->setAlignment(Qt::AlignCenter);
         OK_Button = new QPushButton(centralwidget);
-        OK_Button->setObjectName(QString::fromUtf8("OK_Button"));
+        OK_Button->setObjectName("OK_Button");
         OK_Button->setGeometry(QRect(750, 560, 350, 150));
         OK_Button->setFont(font1);
         RESET_Button = new QPushButton(centralwidget);
-        RESET_Button->setObjectName(QString::fromUtf8("RESET_Button"));
+        RESET_Button->setObjectName("RESET_Button");
         RESET_Button->setGeometry(QRect(50, 560, 350, 150));
         QFont font2;
-        font2.setFamily(QString::fromUtf8("Ubuntu"));
+        font2.setFamilies({QString::fromUtf8("Ubuntu")});
         font2.setPointSize(28);
         RESET_Button->setFont(font2);
         Keyboad_Box = new QGroupBox(centralwidget);
-        Keyboad_Box->setObjectName(QString::fromUtf8("Keyboad_Box"));
+        Keyboad_Box->setObjectName("Keyboad_Box");
         Keyboad_Box->setGeometry(QRect(300, 370, 600, 400));
         pushButton_1 = new QPushButton(Keyboad_Box);
-        pushButton_1->setObjectName(QString::fromUtf8("pushButton_1"));
+        pushButton_1->setObjectName("pushButton_1");
         pushButton_1->setGeometry(QRect(20, 40, 100, 100));
         QFont font3;
         font3.setPointSize(20);
         pushButton_1->setFont(font3);
         pushButton_2 = new QPushButton(Keyboad_Box);
-        pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
+        pushButton_2->setObjectName("pushButton_2");
         pushButton_2->setGeometry(QRect(150, 40, 100, 100));
         pushButton_2->setFont(font3);
         pushButton_3 = new QPushButton(Keyboad_Box);
-        pushButton_3->setObjectName(QString::fromUtf8("pushButton_3"));
+        pushButton_3->setObjectName("pushButton_3");
         pushButton_3->setGeometry(QRect(290, 40, 100, 100));
         pushButton_3->setFont(font3);
         pushButton_4 = new QPushButton(Keyboad_Box);
-        pushButton_4->setObjectName(QString::fromUtf8("pushButton_4"));
+        pushButton_4->setObjectName("pushButton_4");
         pushButton_4->setGeometry(QRect(20, 160, 100, 100));
         pushButton_4->setFont(font3);
         pushButton_5 = new QPushButton(Keyboad_Box);
-        pushButton_5->setObjectName(QString::fromUtf8("pushButton_5"));
+        pushButton_5->setObjectName("pushButton_5");
         pushButton_5->setGeometry(QRect(150, 160, 100, 100));
         pushButton_5->setFont(font3);
         pushButton_6 = new QPushButton(Keyboad_Box);
-        pushButton_6->setObjectName(QString::fromUtf8("pushButton_6"));
+        pushButton_6->setObjectName("pushButton_6");
         pushButton_6->setGeometry(QRect(290, 160, 100, 100));
         pushButton_6->setFont(font3);
         pushButton_7 = new QPushButton(Keyboad_Box);
-        pushButton_7->setObjectName(QString::fromUtf8("pushButton_7"));
+        pushButton_7->setObjectName("pushButton_7");
         pushButton_7->setGeometry(QRect(20, 280, 100, 100));
         pushButton_7->setFont(font3);
         pushButton_8 = new QPushButton(Keyboad_Box);
-        pushButton_8->setObjectName(QString::fromUtf8("pushButton_8"));
+        pushButton_8->setObjectName("pushButton_8");
         pushButton_8->setGeometry(QRect(150, 280, 100, 100));
         pushButton_8->setFont(font3);
         pushButton_9 = new QPushButton(Keyboad_Box);
-        pushButton_9->setObjectName(QString::fromUtf8("pushButton_9"));
+        pushButton_9->setObjectName("pushButton_9");
         pushButton_9->setGeometry(QRect(290, 280, 100, 100));
         pushButton_9->setFont(font3);
         pushButton_canel = new QPushButton(Keyboad_Box);
-        pushButton_canel->setObjectName(QString::fromUtf8("pushButton_canel"));
+        pushButton_canel->setObjectName("pushButton_canel");
         pushButton_canel->setGeometry(QRect(430, 40, 150, 100));
         pushButton_canel->setFont(font3);
         pushButton_clear = new QPushButton(Keyboad_Box);
-        pushButton_clear->setObjectName(QString::fromUtf8("pushButton_clear"));
+        pushButton_clear->setObjectName("pushButton_clear");
         pushButton_clear->setGeometry(QRect(430, 160, 150, 100));
         QFont font4;
         font4.setPointSize(12);
         pushButton_clear->setFont(font4);
         pushButton_enter = new QPushButton(Keyboad_Box);
-        pushButton_enter->setObjectName(QString::fromUtf8("pushButton_enter"));
+        pushButton_enter->setObjectName("pushButton_enter");
         pushButton_enter->setGeometry(QRect(430, 280, 150, 100));
         pushButton_enter->setFont(font3);
         textInputBox = new QLineEdit(centralwidget);
-        textInputBox->setObjectName(QString::fromUtf8("textInputBox"));
+        textInputBox->setObjectName("textInputBox");
         textInputBox->setGeometry(QRect(320, 300, 550, 70));
         QFont font5;
         font5.setPointSize(28);
