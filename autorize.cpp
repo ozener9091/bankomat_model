@@ -28,6 +28,8 @@ void AutorizeWindow::resetToLoginState()
     ui->OK_Button->show();
     ui->RESET_Button->show();
     ui->welcome_label->show();
+
+    this->m_enterHandlerEnabled = true;
 }
 
 void AutorizeWindow::on_RESET_Button_clicked()
@@ -35,10 +37,26 @@ void AutorizeWindow::on_RESET_Button_clicked()
     ui->textInputBox->setText("");
 }
 
+void AutorizeWindow::keyPressEvent(QKeyEvent *event)
+{
+    if (m_enterHandlerEnabled &&
+        (event->key() == Qt::Key_Return || event->key() == Qt::Key_Enter) &&
+        !event->isAutoRepeat())
+    {
+        on_OK_Button_clicked();
+        return;
+    }
+    QWidget::keyPressEvent(event);
+}
+
+
 void AutorizeWindow::on_OK_Button_clicked()
 {
     AutorizeWindow::UserID = checkLogin(ui->textInputBox->text());
-    if(AutorizeWindow::UserID != 0) InputPINWindow();
+    if(AutorizeWindow::UserID != 0) {
+        this->m_enterHandlerEnabled = false;
+        InputPINWindow();
+    }
 
 }
 

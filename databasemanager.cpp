@@ -93,6 +93,11 @@ QString checkBalance() {
 
 bool depositBalance(int sum, QWidget* parent = nullptr) {
 
+    if(sum > 100000){
+        QMessageBox::critical(parent, "Ошибка", "Максимальная сумма пополнения: 100.000 руб.");
+        return false;
+    }
+
     if(sum % 50 != 0 && sum % 100 != 0) {
         QMessageBox::critical(parent, "Ошибка", "Сумма должна быть кратна купюрам '50', '100', '500', '1000'");
         return false;
@@ -118,6 +123,10 @@ bool depositBalance(int sum, QWidget* parent = nullptr) {
 
 bool takeOffBalance(int sum, QWidget* parent = nullptr) {
 
+    if(sum > 100000){
+        QMessageBox::critical(parent, "Ошибка", "Максимальная сумма снятия наличных: 100.000 руб.");
+        return false;
+    }
 
     if (AutorizeWindow::UserID <= 0) {
         qDebug() << "Неверный UserID:" << AutorizeWindow::UserID;

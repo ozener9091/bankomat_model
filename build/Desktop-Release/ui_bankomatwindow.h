@@ -10,6 +10,7 @@
 #define UI_BANKOMATWINDOW_H
 
 #include <QtCore/QVariant>
+#include <QtGui/QIcon>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QGroupBox>
 #include <QtWidgets/QLabel>
@@ -36,8 +37,12 @@ public:
         if (bankomatwindow->objectName().isEmpty())
             bankomatwindow->setObjectName("bankomatwindow");
         bankomatwindow->resize(1200, 800);
-        bankomatwindow->setMinimumSize(QSize(800, 800));
-        bankomatwindow->setMaximumSize(QSize(1200, 1200));
+        bankomatwindow->setMinimumSize(QSize(1200, 800));
+        bankomatwindow->setMaximumSize(QSize(1200, 800));
+        bankomatwindow->setSizeIncrement(QSize(1200, 800));
+        bankomatwindow->setBaseSize(QSize(1200, 800));
+        QIcon icon(QIcon::fromTheme(QString::fromUtf8("applications-system")));
+        bankomatwindow->setWindowIcon(icon);
         balanceButton = new QPushButton(bankomatwindow);
         balanceButton->setObjectName("balanceButton");
         balanceButton->setGeometry(QRect(50, 30, 300, 150));
@@ -105,7 +110,7 @@ public:
 
     void retranslateUi(QWidget *bankomatwindow)
     {
-        bankomatwindow->setWindowTitle(QCoreApplication::translate("bankomatwindow", "Form", nullptr));
+        bankomatwindow->setWindowTitle(QCoreApplication::translate("bankomatwindow", "\320\221\320\260\320\275\320\272\320\276\320\274\320\260\321\202", nullptr));
         balanceButton->setText(QCoreApplication::translate("bankomatwindow", "\320\237\320\276\320\272\320\260\320\267\320\260\321\202\321\214 \320\261\320\260\320\273\320\260\320\275\321\201", nullptr));
         takeBox->setTitle(QCoreApplication::translate("bankomatwindow", "\320\241\320\275\321\217\321\202\321\214", nullptr));
         takeButton_100->setText(QCoreApplication::translate("bankomatwindow", "100 \342\202\275", nullptr));

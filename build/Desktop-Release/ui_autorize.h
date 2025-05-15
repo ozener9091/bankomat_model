@@ -10,6 +10,7 @@
 #define UI_AUTORIZE_H
 
 #include <QtCore/QVariant>
+#include <QtGui/QIcon>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QGroupBox>
 #include <QtWidgets/QLabel>
@@ -48,6 +49,12 @@ public:
         if (AutorizeWindow->objectName().isEmpty())
             AutorizeWindow->setObjectName("AutorizeWindow");
         AutorizeWindow->resize(1200, 800);
+        AutorizeWindow->setMinimumSize(QSize(1200, 800));
+        AutorizeWindow->setMaximumSize(QSize(1200, 800));
+        AutorizeWindow->setSizeIncrement(QSize(1200, 800));
+        AutorizeWindow->setBaseSize(QSize(1200, 800));
+        QIcon icon(QIcon::fromTheme(QString::fromUtf8("applications-development")));
+        AutorizeWindow->setWindowIcon(icon);
         centralwidget = new QWidget(AutorizeWindow);
         centralwidget->setObjectName("centralwidget");
         welcome_label = new QLabel(centralwidget);
@@ -148,7 +155,7 @@ public:
 
     void retranslateUi(QMainWindow *AutorizeWindow)
     {
-        AutorizeWindow->setWindowTitle(QCoreApplication::translate("AutorizeWindow", "MainWindow", nullptr));
+        AutorizeWindow->setWindowTitle(QCoreApplication::translate("AutorizeWindow", "\320\220\320\262\321\202\320\276\321\200\320\270\320\267\320\260\321\206\320\270\321\217", nullptr));
         welcome_label->setText(QCoreApplication::translate("AutorizeWindow", "\320\224\320\276\320\261\321\200\320\276 \320\277\320\276\320\266\320\260\320\273\320\276\320\262\320\260\321\202\321\214!", nullptr));
         label->setText(QCoreApplication::translate("AutorizeWindow", "\320\224\320\273\321\217 \320\260\320\262\321\202\320\276\321\200\320\270\320\267\320\260\321\206\320\270\320\270 \320\262\320\262\320\265\320\264\320\270\321\202\320\265 \320\270\320\274\321\217", nullptr));
         OK_Button->setText(QCoreApplication::translate("AutorizeWindow", "\320\236\320\232", nullptr));

@@ -2,6 +2,7 @@
 #define AUTORIZE_H
 
 #include <QMainWindow>
+#include <QKeyEvent>
 #include "ui_autorize.h"
 
 QT_BEGIN_NAMESPACE
@@ -19,6 +20,8 @@ public:
     AutorizeWindow(QWidget *parent = nullptr);
     ~AutorizeWindow();
     void resetToLoginState();
+    void setEnterHandlerEnabled(bool enabled);
+
 
 private slots:
 
@@ -54,7 +57,11 @@ private slots:
 
     void on_pushButton_enter_clicked();
 
+protected:
+    void keyPressEvent(QKeyEvent *event) override;
 private:
+
+    inline static bool m_enterHandlerEnabled = true;
     Ui::AutorizeWindow *ui;
 };
 #endif // AUTORIZE_H

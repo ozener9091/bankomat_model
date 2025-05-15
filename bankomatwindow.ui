@@ -12,18 +12,33 @@
   </property>
   <property name="minimumSize">
    <size>
-    <width>800</width>
+    <width>1200</width>
     <height>800</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
     <width>1200</width>
-    <height>1200</height>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="sizeIncrement">
+   <size>
+    <width>1200</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="baseSize">
+   <size>
+    <width>1200</width>
+    <height>800</height>
    </size>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>Банкомат</string>
+  </property>
+  <property name="windowIcon">
+   <iconset theme="applications-system"/>
   </property>
   <widget class="QPushButton" name="balanceButton">
    <property name="geometry">
